@@ -3,6 +3,7 @@
 /dist
 /environments
 /node_modules
+/backup
 
 *-debug.log
 *-error.log
