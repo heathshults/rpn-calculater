@@ -217,7 +217,7 @@ stack manipulation
 				calc.stack.push(a);
 
 			} else {
-				throw ('unknown operator ' + op);
+				throw new Error(`unknown operator  ${op}`);
 			}
 			if (options.debug) console.log(cnt, op, calc.stack, calc.store);
 		}
@@ -245,7 +245,7 @@ stack manipulation
 			/* opers should be an array of strings, if not and is an string, split it first */
 			if (typeof opers === 'string') opers = opers.split(' ');
 			rpnprim(calc, opers, options);
-		  if (options.fullStack) {
+      if (options.fullStack) {
 				return calc.stack.slice().reverse(); // return a reversed copy of the stack
 			} else {
 				let l = calc.stack.length;				
