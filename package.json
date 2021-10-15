@@ -1,0 +1,59 @@
+{
+  "name": "rpn-calc",
+  "version": "0.1.0",
+  "description": "A calculator that does things I never do.",
+  "source": "src/index.js",
+  "main": "dist/calculator.js",
+  "module": "dist/calculator.module.js",
+  "types": "dist/types.d.ts",
+  "targets": {
+    "default": {
+      "distDir": "./dist"
+    }
+  },
+  "scripts": {
+    "babel": "babel src/index.ts -d src",
+    "build": "parcel build",
+    "parcel": "parcel src/index.js --dist-dir dist",
+    "package": "npm-run-all lint typecheck babel parcel",
+    "typecheck": "tsc src/index.ts --noEmit",
+    "lint": "eslint --fix src/index.ts",
+    "test": "set test "
+  },
+  "keywords": [
+    "RPN",
+    "WhatTheHeck",
+    "Interesting",
+    "Another-good-learn"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^8.0.1",
+    "parcel": "^2.0.0",
+    "typescript": "^4.4.4"
+  },
+  "author": "Heath Shults, Strangers, Friends",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/plugin-syntax-typescript": "^7.14.5",
+    "@babel/preset-env": "^7.15.8",
+    "@babel/preset-typescript": "^7.15.0",
+    "@types/node": "^16.11.0",
+    "eslint-config-recommended": "^4.1.0",
+    "npm-run-all": "^4.1.5"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/heathshults/rpn-calculater.git"
+  },
+  "bugs": {
+    "url": "https://github.com/heathshults/rpn-calculater/issues"
+  },
+  "homepage": "https://github.com/heathshults/rpn-calculater#readme"
+}
