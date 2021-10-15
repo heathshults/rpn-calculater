@@ -4,6 +4,8 @@
 /environments
 /node_modules
 
+*-debug.log
+*-error.log
 
 # dependencies
 /node_modules

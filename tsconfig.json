@@ -6,7 +6,6 @@
     "allowSyntheticDefaultImports": true,
     "allowJs": true,
     "declaration": true,
-    "declare": true,
     "isolatedModules": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
@@ -30,6 +29,7 @@
   },
   "include": [
     "src/**/*.ts",
+    "src/**/*.js",
     "types/jsx.d.ts",
     "types/**/*.ts"
   ],
