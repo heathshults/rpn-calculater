@@ -5,9 +5,9 @@
   "name": "rpn-calcli",
   "version": "0.1.0",
   "description": "A calculator that does things I never do.",
-  "source": "src/index.js",
-  "main": "dist/calculator.js",
-  "module": "dist/calculator.module.js",
+  "source": "src/index.ts",
+  "main": "dist/calculator.ts",
+  "module": "dist/calculator.module.ts",
   "types": "dist/types.d.ts",
   "targets": {
     "default": {
@@ -16,7 +16,7 @@
   },
   "scripts": {
     "build": "parcel build",
-    "parcel": "parcel src/index.js --dist-dir dist",
+    "parcel": "parcel src/index.ts --dist-dir dist",
     "package": "npm-run-all lint typecheck babel parcel",
     "typecheck": "tsc src/index.ts --noEmit",
     "lint": "eslint --fix src/index.js",
