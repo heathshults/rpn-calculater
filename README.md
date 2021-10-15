@@ -30,7 +30,7 @@ Should return something like this:
 
 ```
 
-      node cli-rpm-calc [--options] [operands operators]
+      node rpncli [--options] [operands operators]
       
       options   
       	--help  
